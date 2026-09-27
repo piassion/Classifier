@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>People Classifier</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>People Classifier</h1>
+
+    <div class="filters">
+
+        <label>Age Group:</label>
+        <select id="ageFilter" onchange="applyFilters()">
+            <option value="all">All Age Groups</option>
+            <option value="Young Adult">Young Adult (18-25)</option>
+            <option value="Adult">Adult (26-40)</option>
+            <option value="Middle-Aged">Middle-Aged (41-60)</option>
+            <option value="Senior">Senior (61+)</option>
+        </select>
+
+
+        <label>Profession:</label>
+        <select id="professionFilter" onchange="applyFilters()">
+            <option value="all">All Professions</option>
+        </select>
+
+
+        <label>Gender:</label>
+        <select id="genderFilter" onchange="applyFilters()">
+            <option value="all">All Genders</option>
+        </select>
+
+    </div>
+
+
+    <div id="resultsGrid">
+        <p>Loading data...</p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
